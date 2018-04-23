@@ -1,0 +1,54 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SearchFinder</title>
+
+<!--SEO goodies-->
+<meta name="description" content="Search and Find useful services">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Reset to normalize appearance of elements across browsers-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+
+<!--Our styles-->
+	<link href="https://fonts.googleapis.com/css?family=Fondamento" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  
+  
+  
+
+  
+  <form role="form" action="/search" accept-charset="UTF-8" method="post" class="search-form" id="myform">
+    <fieldset>
+      <img class="logo" src="search.jpg" role ="presentation" />
+      <legend><h1>Food Finder</h1></legend>
+      <p id="demo"></p>
+      <label for="address">What to Eat</label>
+      <input type="text" placeholder="Eg: Pizza" name="address" id="address" aria-required="true" required/>
+      <label for="citystate">Where to Eat</label>
+      
+      <input placeholder="Seattle WA" type="text" name="citystate" id="citystate" aria-required="true" required/>
+      <button id ="searchButton" type="submit" role="button">Search</button>
+      
+    </fieldset>
+  </form>
+
+  <section role="contentinfo" aria-label="Displaying searched criteria">
+    <div id="results"></div>
+ 
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
